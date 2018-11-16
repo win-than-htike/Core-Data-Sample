@@ -10,9 +10,13 @@
 		9984343D219EF1B000E10699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984343C219EF1B000E10699 /* AppDelegate.swift */; };
 		9984343F219EF1B000E10699 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984343E219EF1B000E10699 /* ViewController.swift */; };
 		99843442219EF1B000E10699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99843440219EF1B000E10699 /* Main.storyboard */; };
-		99843445219EF1B000E10699 /* CoreData_Sample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 99843443219EF1B000E10699 /* CoreData_Sample.xcdatamodeld */; };
+		99843445219EF1B000E10699 /* Todo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 99843443219EF1B000E10699 /* Todo.xcdatamodeld */; };
 		99843447219EF1B100E10699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99843446219EF1B100E10699 /* Assets.xcassets */; };
 		9984344A219EF1B100E10699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99843448219EF1B100E10699 /* LaunchScreen.storyboard */; };
+		99843456219EFA1400E10699 /* TaskAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99843455219EFA1400E10699 /* TaskAddViewController.swift */; };
+		99843459219F086D00E10699 /* Todos+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99843457219F086D00E10699 /* Todos+CoreDataClass.swift */; };
+		9984345A219F086D00E10699 /* Todos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99843458219F086D00E10699 /* Todos+CoreDataProperties.swift */; };
+		9984345C219F0A1400E10699 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984345B219F0A1400E10699 /* TaskTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		99843446219EF1B100E10699 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99843449219EF1B100E10699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9984344B219EF1B100E10699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99843455219EFA1400E10699 /* TaskAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAddViewController.swift; sourceTree = "<group>"; };
+		99843457219F086D00E10699 /* Todos+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todos+CoreDataClass.swift"; sourceTree = "<group>"; };
+		99843458219F086D00E10699 /* Todos+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todos+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9984345B219F0A1400E10699 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +64,17 @@
 		9984343B219EF1B000E10699 /* CoreData Sample */ = {
 			isa = PBXGroup;
 			children = (
+				99843457219F086D00E10699 /* Todos+CoreDataClass.swift */,
+				99843458219F086D00E10699 /* Todos+CoreDataProperties.swift */,
 				9984343C219EF1B000E10699 /* AppDelegate.swift */,
 				9984343E219EF1B000E10699 /* ViewController.swift */,
 				99843440219EF1B000E10699 /* Main.storyboard */,
 				99843446219EF1B100E10699 /* Assets.xcassets */,
 				99843448219EF1B100E10699 /* LaunchScreen.storyboard */,
 				9984344B219EF1B100E10699 /* Info.plist */,
-				99843443219EF1B000E10699 /* CoreData_Sample.xcdatamodeld */,
+				99843443219EF1B000E10699 /* Todo.xcdatamodeld */,
+				99843455219EFA1400E10699 /* TaskAddViewController.swift */,
+				9984345B219F0A1400E10699 /* TaskTableViewCell.swift */,
 			);
 			path = "CoreData Sample";
 			sourceTree = "<group>";
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9984345C219F0A1400E10699 /* TaskTableViewCell.swift in Sources */,
 				9984343F219EF1B000E10699 /* ViewController.swift in Sources */,
+				99843459219F086D00E10699 /* Todos+CoreDataClass.swift in Sources */,
 				9984343D219EF1B000E10699 /* AppDelegate.swift in Sources */,
-				99843445219EF1B000E10699 /* CoreData_Sample.xcdatamodeld in Sources */,
+				99843456219EFA1400E10699 /* TaskAddViewController.swift in Sources */,
+				9984345A219F086D00E10699 /* Todos+CoreDataProperties.swift in Sources */,
+				99843445219EF1B000E10699 /* Todo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,13 +358,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		99843443219EF1B000E10699 /* CoreData_Sample.xcdatamodeld */ = {
+		99843443219EF1B000E10699 /* Todo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				99843444219EF1B000E10699 /* CoreData_Sample.xcdatamodel */,
 			);
 			currentVersion = 99843444219EF1B000E10699 /* CoreData_Sample.xcdatamodel */;
-			path = CoreData_Sample.xcdatamodeld;
+			path = Todo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
